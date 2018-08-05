@@ -7,7 +7,7 @@
     "pack:dev": "webpack --mode development",
     "pack:prod": "webpack --mode production",
     "debug": "webpack-dev-server --mode development --open",
-    "realse": "webpack-dev-server --mode production --open"
+    "release": "webpack-dev-server --mode production --open"
   },
   "keywords": [
     "react",
