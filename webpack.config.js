@@ -58,7 +58,7 @@ module.exports = {
             title: "比乐综合管理",
             filename: "index.html",
             hash: true,
-            template: './html/template.html'
+            template: './public/index.html'
         })
     ]
 }
