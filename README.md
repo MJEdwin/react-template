@@ -4,17 +4,21 @@
 It's a simple react template like create-react-app but use webpack to pack you web code. 
 
 ## webpack config ##
-1. css analysis loader
+1. resourse analysis loader
+
+    * url-loader-use dataUrl while resourse volume less than 8192kb
+
+2. css analysis loader
     
     * postcss-loader autoprefixer
     * css-loader
     * style-loader
 
-2. javascript(js&jsx) analysis loader
+3. javascript(js&jsx) analysis loader
 
     * babel-loader-use prest env, react and stage-0
 
-3. plugins
+4. plugins
 
     * HtmlWebpackPlugin to generate html of react app
     * HotModuleReplacementPlugin to implement webpack devServer host replace

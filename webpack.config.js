@@ -23,6 +23,14 @@ module.exports = {
     //模块
     module: {
         rules: [{
+            test: /\.(jpg|png|gif)$/,
+            use: [{
+                loader: 'url-loader',
+                options: {
+                    limit: 8192
+                }
+            }]
+        }, {
             test: /\.jsx?$/,
             exclude: /node_modules/,
             use: [{
