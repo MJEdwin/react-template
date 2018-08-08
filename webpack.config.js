@@ -20,6 +20,9 @@ module.exports = {
         inline: true,
         historyApiFallback: true,
     },
+    resolve: {
+        extensions: [".jsx", ".js"]
+    },
     //模块
     module: {
         rules: [{
@@ -55,7 +58,7 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             lang: "zh-cn",
-            title: "比乐综合管理",
+            title: "React Template App",
             filename: "index.html",
             hash: true,
             template: './public/index.html'
