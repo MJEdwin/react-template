@@ -13,7 +13,7 @@ export default class App extends Component {
      */
     onValueChange = (e) => {
         this.setState({
-            value: e.currentTarget.value
+            value: e.target.value
         });
     }
 

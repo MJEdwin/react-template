@@ -60,6 +60,7 @@ module.exports = {
             lang: "zh-cn",
             title: "React Template App",
             filename: "index.html",
+            favicon:"./public/favicon.ico",
             hash: true,
             template: './public/index.html'
         })
