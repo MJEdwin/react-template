@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    font-size: 16px;
+}
+
+body {
+    line-height: 1.438;
+}
+
+input, select, textarea, button {
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+}
+
+.block {
+    display: block;
+    width: 100%;
+}
+
+.inline-block{
+    display: inline-block;
+}
