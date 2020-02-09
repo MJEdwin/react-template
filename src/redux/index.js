@@ -1,6 +1,7 @@
 import { createStore, combineReducers } from 'redux';
-import counterReducer from './reducers/counterReducer';
+import counter from './counter';
+import home from './home';
 
 export default createStore(combineReducers({
-    'counter': counterReducer
+    counter, home
 }));

@@ -2,7 +2,7 @@ import React, { Component, Suspense, lazy } from 'react';
 import { BrowserRouter, Switch, Route, NavLink } from 'react-router-dom';
 import './app.css';
 
-import Loading from './pages/Loading';
+import Loading from './components/Loading';
 
 export default class App extends Component {
     constructor(props) {
@@ -24,10 +24,9 @@ export default class App extends Component {
                 <div style={{ overflow: "hidden" }}>
                     <Suspense fallback={<Loading />}>
                         <Switch>
-                            <Route exact path="/" component={lazy(() => import('./pages/Home'))} />
-                            <Route path="/counter" component={lazy(() => import('./pages/Counter'))} />
-                            <Route path="/loading" component={lazy(() => import('./pages/Loading'))} />
-                            <Route component={lazy(() => import('./pages/Error'))} />
+                            <Route exact path="/" component={lazy(() => import('./containers/Home'))} />
+                            <Route path="/counter" component={lazy(() => import('./containers/Counter'))} />
+                            <Route component={lazy(() => import('./containers/Error'))} />
                         </Switch>
                     </Suspense>
                 </div>
